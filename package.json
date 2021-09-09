@@ -1,0 +1,22 @@
+{
+  "name": "floating-bubble",
+  "version": "1.0.0",
+  "description": "floating bubble for android",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tele-Ware/react-native-floating-bubble.git"
+  },
+  "keywords": [
+    "bubble"
+  ],
+  "author": "Abdelrahman Nabil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tele-Ware/react-native-floating-bubble/issues"
+  },
+  "homepage": "https://github.com/Tele-Ware/react-native-floating-bubble#readme"
+}
