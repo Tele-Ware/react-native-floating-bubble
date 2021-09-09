@@ -102,9 +102,6 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
   private void addNewBubble(int x, int y) {
     this.removeBubble();
     bubbleView = (BubbleLayout) LayoutInflater.from(reactContext).inflate(R.layout.bubble_layout, null);
-    final MediaPlayer mp = MediaPlayer.create(this, R.raw.notification);
-    mp.start();
-
     bubbleView.setOnBubbleRemoveListener(new BubbleLayout.OnBubbleRemoveListener() {
       @Override
       public void onBubbleRemoved(BubbleLayout bubble) {
@@ -121,6 +118,8 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
     });
     bubbleView.setShouldStickToWall(true);
     bubblesManager.addBubble(bubbleView, x, y);
+    final MediaPlayer mp = MediaPlayer.create(this, R.raw.notification);
+    mp.start();
   }
 
   private boolean hasPermission(){
